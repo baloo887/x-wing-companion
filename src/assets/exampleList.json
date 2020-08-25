@@ -1,0 +1,632 @@
+{
+    "id": "48ff1a62-71d5-47e3-b657-2a5d3a02330d",
+    "name": "Aces",
+    "description": "",
+    "deck": [
+        {
+            "pilot_card": {
+                "id": 107,
+                "faction_id": 2,
+                "card_set_ids": [
+                    5
+                ],
+                "card_type_id": 1,
+                "available_actions": [
+                    {
+                        "id": 50282,
+                        "base_action_id": 2,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50283,
+                        "base_action_id": 4,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50284,
+                        "base_action_id": 5,
+                        "related_action_id": 4,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": "stress"
+                    },
+                    {
+                        "id": 50285,
+                        "base_action_id": 12,
+                        "related_action_id": null,
+                        "base_action_side_effect": "stress",
+                        "related_action_side_effect": null
+                    }
+                ],
+                "statistics": [
+                    {
+                        "id": 57901,
+                        "statistic_id": 10,
+                        "value": "2",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57902,
+                        "statistic_id": 1,
+                        "value": "2",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57903,
+                        "statistic_id": 2,
+                        "value": "6",
+                        "recurring": false
+                    }
+                ],
+                "available_upgrades": [
+                    1,
+                    5,
+                    6,
+                    6,
+                    12,
+                    12,
+                    14,
+                    16
+                ],
+                "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_107.jpg",
+                "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_107.png",
+                "name": "•Tomax Bren",
+                "subtitle": "Brash Maverick",
+                "ability_text": "After you perform a <reload> action, you may recover 1<nonbreak><standardcharge> token on 1 of your equipped <talent> upgrade cards. <return><shipability><sabold>Nimble Bomber:</sabold> If you would drop a device using a <straight> template, you may use a <leftbank> or <rightbank> template of the same speed instead.</shipability>",
+                "cost": "35",
+                "ship_ability_text": null,
+                "ship_size": 1,
+                "force_side": null,
+                "initiative": 5,
+                "ffg_id": "XW_P_107",
+                "ship_type": 19,
+                "maneuvers_image": "https://sb-cdn.fantasyflightgames.com/ship_types/maneuvers/TIE_sa_Bomber_Chart.jpg"
+            },
+            "slots": [
+                {
+                    "id": 230,
+                    "card_set_ids": [
+                        4,
+                        5,
+                        6,
+                        9,
+                        14,
+                        15,
+                        20,
+                        21,
+                        27
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        1
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_1.jpg",
+                    "name": "Crack Shot",
+                    "ability_text": "While you perform a primary attack, if the defender is in your <bullseye>, before the Neutralize Results step, you may spend 1<nonbreak><standardcharge> to cancel 1<nonbreak><evade> result.",
+                    "cost": "2",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59043,
+                            "statistic_id": 7,
+                            "value": "1",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_1.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 266,
+                    "card_set_ids": [
+                        4,
+                        5,
+                        6,
+                        10,
+                        14,
+                        15,
+                        20,
+                        21,
+                        27
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": true,
+                    "weapon_range": "1 – 2",
+                    "upgrade_types": [
+                        6
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_37.jpg",
+                    "name": "Cluster Missiles",
+                    "ability_text": "<smallcaps>Attack (<targetlock>):</smallcaps> Spend 1<nonbreak><standardcharge>. After this attack, you may perform this attack as a bonus attack against a different target at range 0–1 of the defender, ignoring the <targetlock> requirement.",
+                    "cost": "4",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59071,
+                            "statistic_id": 10,
+                            "value": "3",
+                            "recurring": false
+                        },
+                        {
+                            "id": 59073,
+                            "statistic_id": 7,
+                            "value": "4",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_37.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 267,
+                    "card_set_ids": [
+                        4,
+                        5,
+                        6,
+                        11,
+                        14,
+                        15,
+                        20,
+                        21,
+                        23,
+                        27,
+                        45
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": true,
+                    "weapon_range": "2 – 3",
+                    "upgrade_types": [
+                        6
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_38.jpg",
+                    "name": "Concussion Missiles",
+                    "ability_text": "<smallcaps>Attack (<targetlock>):</smallcaps> Spend 1<nonbreak><standardcharge>. After this attack hits, each ship at range 0–1 of the defender exposes 1 of its damage cards.",
+                    "cost": "6",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59074,
+                            "statistic_id": 10,
+                            "value": "3",
+                            "recurring": false
+                        },
+                        {
+                            "id": 59076,
+                            "statistic_id": 7,
+                            "value": "3",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_38.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 299,
+                    "card_set_ids": [
+                        1,
+                        4,
+                        5,
+                        6,
+                        14,
+                        15,
+                        43
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        14
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_75.jpg",
+                    "name": "Shield Upgrade",
+                    "ability_text": "<flavor>Deflector shields are a substantial line of defense on most starships beyond the lightest fighters. While enhancing a ship’s shield capacity can be costly, all but the most confident or reckless pilots see the value in this sort of investment.</flavor>",
+                    "cost": "6",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59100,
+                            "statistic_id": 3,
+                            "value": "+1",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_75.png",
+                    "behaviours": []
+                }
+            ],
+            "cost": 53
+        },
+        {
+            "pilot_card": {
+                "id": 103,
+                "faction_id": 2,
+                "card_set_ids": [
+                    5,
+                    43
+                ],
+                "card_type_id": 1,
+                "available_actions": [
+                    {
+                        "id": 50266,
+                        "base_action_id": 2,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50267,
+                        "base_action_id": 3,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50268,
+                        "base_action_id": 5,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50269,
+                        "base_action_id": 1,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    }
+                ],
+                "statistics": [
+                    {
+                        "id": 57889,
+                        "statistic_id": 10,
+                        "value": "3",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57890,
+                        "statistic_id": 1,
+                        "value": "3",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57891,
+                        "statistic_id": 2,
+                        "value": "3",
+                        "recurring": false
+                    }
+                ],
+                "available_upgrades": [
+                    1,
+                    14,
+                    14
+                ],
+                "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_103.jpg",
+                "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_103.png",
+                "name": "•Soontir Fel",
+                "subtitle": "Ace of Legend",
+                "ability_text": "At the start of the Engagement Phase, if there is an enemy ship in your <bullseye>, gain 1 focus token.<return><shipability><sabold>Autothrusters:</sabold> After you perform an action, you may perform a red <barrelroll> or red <boost> action.</shipability>",
+                "cost": "54",
+                "ship_ability_text": null,
+                "ship_size": 1,
+                "force_side": null,
+                "initiative": 6,
+                "ffg_id": "XW_P_103",
+                "ship_type": 41,
+                "maneuvers_image": "https://sb-cdn.fantasyflightgames.com/ship_types/maneuvers/TIE_in_Interceptor_Chart.jpg"
+            },
+            "slots": [
+                {
+                    "id": 240,
+                    "card_set_ids": [
+                        1,
+                        4,
+                        5,
+                        6,
+                        14,
+                        15,
+                        43
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        1
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_11.jpg",
+                    "name": "Outmaneuver",
+                    "ability_text": "While you perform a <frontarc> attack, if you are not in the defender’s firing arc, the defender rolls 1 fewer defense die.",
+                    "cost": "6",
+                    "available_actions": [],
+                    "statistics": [],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_11.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 299,
+                    "card_set_ids": [
+                        1,
+                        4,
+                        5,
+                        6,
+                        14,
+                        15,
+                        43
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        14
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_75.jpg",
+                    "name": "Shield Upgrade",
+                    "ability_text": "<flavor>Deflector shields are a substantial line of defense on most starships beyond the lightest fighters. While enhancing a ship’s shield capacity can be costly, all but the most confident or reckless pilots see the value in this sort of investment.</flavor>",
+                    "cost": "8",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59100,
+                            "statistic_id": 3,
+                            "value": "+1",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_75.png",
+                    "behaviours": []
+                }
+            ],
+            "cost": 68
+        },
+        {
+            "pilot_card": {
+                "id": 93,
+                "faction_id": 2,
+                "card_set_ids": [
+                    5,
+                    10
+                ],
+                "card_type_id": 1,
+                "available_actions": [
+                    {
+                        "id": 50228,
+                        "base_action_id": 2,
+                        "related_action_id": 5,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": "stress"
+                    },
+                    {
+                        "id": 50229,
+                        "base_action_id": 4,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    },
+                    {
+                        "id": 50230,
+                        "base_action_id": 5,
+                        "related_action_id": null,
+                        "base_action_side_effect": null,
+                        "related_action_side_effect": null
+                    }
+                ],
+                "statistics": [
+                    {
+                        "id": 57845,
+                        "statistic_id": 10,
+                        "value": "2",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57846,
+                        "statistic_id": 1,
+                        "value": "3",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57847,
+                        "statistic_id": 2,
+                        "value": "3",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57848,
+                        "statistic_id": 3,
+                        "value": "2",
+                        "recurring": false
+                    },
+                    {
+                        "id": 57849,
+                        "statistic_id": 4,
+                        "value": "3",
+                        "recurring": true
+                    }
+                ],
+                "available_upgrades": [
+                    2,
+                    6,
+                    14,
+                    17
+                ],
+                "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_93.jpg",
+                "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_93.png",
+                "name": "•Darth Vader",
+                "subtitle": "Black Leader",
+                "ability_text": "<smallbody>After you perform an action, you may spend 1<nonbreak><forcecharge> to perform an action.</smallbody><return><shipability><sabold>Advanced Targeting Computer:</sabold> While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1<nonbreak><hit> result to a <crit> result.</shipability>",
+                "cost": "67",
+                "ship_ability_text": null,
+                "ship_size": 1,
+                "force_side": 1,
+                "initiative": 6,
+                "ffg_id": "XW_P_93",
+                "ship_type": 13,
+                "maneuvers_image": "https://sb-cdn.fantasyflightgames.com/ship_types/maneuvers/TIE_Advanced_x1_Chart.jpg"
+            },
+            "slots": [
+                {
+                    "id": 294,
+                    "card_set_ids": [
+                        1,
+                        12,
+                        20,
+                        21,
+                        30,
+                        31,
+                        33,
+                        39
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        14
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_70.jpg",
+                    "name": "Afterburners",
+                    "ability_text": "After you fully execute a speed 3–5 maneuver, you may spend 1<nonbreak><standardcharge> to perform a <boost> action, even while stressed.",
+                    "cost": "6",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59098,
+                            "statistic_id": 7,
+                            "value": "2",
+                            "recurring": false
+                        }
+                    ],
+                    "restrictions_raw": "Small ship",
+                    "restrictions": [
+                        [
+                            {
+                                "type": "SHIP_SIZE",
+                                "kwargs": {
+                                    "ship_size_name": "SMALL"
+                                }
+                            }
+                        ]
+                    ],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_70.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 489,
+                    "card_set_ids": [
+                        22,
+                        34,
+                        38,
+                        39,
+                        50
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        17
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/a373c947f0a56ee4bcf4223250326dc0.jpg",
+                    "name": "Hate",
+                    "ability_text": "After you suffer 1 or more damage, recover that many <forcecharge>.",
+                    "cost": "3",
+                    "available_actions": [],
+                    "statistics": [],
+                    "restrictions_raw": "Dark Side",
+                    "restrictions": [
+                        [
+                            {
+                                "type": "FORCE_SIDE",
+                                "kwargs": {
+                                    "force_side_name": "DARK"
+                                }
+                            }
+                        ]
+                    ],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/en/4a10b5c8a3d796116163a741d145f4e9.png",
+                    "behaviours": []
+                },
+                {
+                    "id": 577,
+                    "card_set_ids": [
+                        28,
+                        29,
+                        50
+                    ],
+                    "card_type_id": 2,
+                    "weapon_no_bonus": false,
+                    "weapon_range": null,
+                    "upgrade_types": [
+                        2
+                    ],
+                    "image": "https://sb-cdn.fantasyflightgames.com/card_art/a9c69fd08df1a2ce84f240943fe05245.jpg",
+                    "name": "Passive Sensors",
+                    "ability_text": "<smallbody><smallcaps>Action:</smallcaps> Spend 1<nonbreak><standardcharge>. You can only perform this action in your Perform Action step.</smallbody><return><smallbody>While your<nonbreak><standardcharge> is inactive, you cannot be coordinated. Before you engage, if your <standardcharge> is inactive, you may perform a<nonbreak><calculate> or<nonbreak><targetlock> action.</smallbody>",
+                    "cost": "6",
+                    "available_actions": [],
+                    "statistics": [
+                        {
+                            "id": 59149,
+                            "statistic_id": 7,
+                            "value": "1",
+                            "recurring": true
+                        }
+                    ],
+                    "restrictions_raw": "",
+                    "restrictions": [],
+                    "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/en/08a980b359fb73dbcb9a315e94d505f0.png",
+                    "behaviours": []
+                }
+            ],
+            "cost": 82
+        }
+    ],
+    "game_format": {
+        "id": "c958c2ff-0e37-422e-a45a-58565ba89fde",
+        "name": "DEPRECATED: Hyperspace",
+        "description": "",
+        "game_mode": 4,
+        "maximum_squad_cost": 200,
+        "created_by": null,
+        "created_at": "2018-08-31",
+        "factions": [
+            6,
+            4,
+            5,
+            1,
+            2,
+            3,
+            7
+        ]
+    },
+    "faction": {
+        "id": 2,
+        "name": "Galactic Empire",
+        "description": "At the height of its power, the Imperial Navy deployed a wide range of ships and exceptional pilots in its effort to bring order to the galaxy and crush the Rebellion. Commanding the resources and manpower of countless star systems, the Empire will spare no expense to ensure it reigns supreme. Whether you’re flying mass-produced TIEs, powerful and lumbering shuttles, or more experimental starfighters, the Galactic Empire in <italic>X-Wing Second Edition</italic> invites you to hold the galaxy in your fist.",
+        "icon": "https://sb-cdn.fantasyflightgames.com/factions/Imperial.png",
+        "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/Imperial.png",
+        "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/Imperial.png",
+        "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/ImperialFactionPageImage.png",
+        "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/ImperialFactionPageImage.png"
+    },
+    "game_mode": {
+        "id": 4,
+        "name": "Custom",
+        "description": "Introduce new and unique experiences to the games of <italic>X-Wing Second Edition</italic> you play with your friends!\r\n\r\nThe Custom Game Mode allows the creation of your own variants. You can adjust the pool of factions, ships, pilots, and upgrades. You can also assign special instructions and objectives.",
+        "art": "https://sb-cdn.fantasyflightgames.com/game_modes/ART_Custom_Format.png"
+    },
+    "cost": 203
+}

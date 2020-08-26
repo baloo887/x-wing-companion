@@ -12,7 +12,7 @@ export function getStatistic(state) {
     let stat = {};
     if (state.metadata) {
       stat = state.metadata.card_stats
-        .filter((item) => item.id === id);
+        .find((item) => item.id === id);
     }
     return stat;
   };

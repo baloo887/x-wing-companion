@@ -4,7 +4,9 @@
       style="height: 620px">
       <q-list bordered>
         <q-item>
-          <q-item-section>{{ pilot.name }}: {{ cost }}pt</q-item-section>
+          <q-item-section class="col-md-2 col-sm-2">{{ pilot.name }}: {{ cost }}pt
+            <q-input v-model="pilotNumber" label="Tag number"/>
+          </q-item-section>
         </q-item>
         <q-item>
           <div class="flex row no-wrap">
@@ -12,7 +14,6 @@
                   <gameCard v-for="config in configurations" :key="config.id"
                     v-bind:cardInfo="config"
                     v-bind:type="'configuration-card'"
-                    v-bind:pilotIndex="pilotIndex"
                   />
               </div>
               <gameCard
@@ -37,6 +38,11 @@ import gameCard from './Card.vue';
 export default {
   name: 'Pilot',
   components: { gameCard },
+  data() {
+    return {
+      pilotNumber: '',
+    };
+  },
   props: {
     pilot: {
       type: Object,

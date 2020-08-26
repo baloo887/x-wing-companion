@@ -23,7 +23,7 @@ function getStatistic(state) {
     var stat = {};
 
     if (state.metadata) {
-      stat = state.metadata.card_stats.filter(function (item) {
+      stat = state.metadata.card_stats.find(function (item) {
         return item.id === id;
       });
     }

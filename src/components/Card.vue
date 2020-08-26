@@ -10,7 +10,6 @@
       <indicator v-for="statistic in stats" v-bind:key="statistic.id"
         v-bind:data="{max:statistic.value, min: 0,
           id: statistic.statistic_id }"
-        v-bind:id="pilotIndex+'_'+cardInfo.id"
       />
     </div>
   </q-card>
@@ -31,9 +30,6 @@ export default {
     type: {
       type: String,
       default: 'pilot-card',
-    },
-    pilotIndex: {
-      type: String,
     },
   },
   computed: {

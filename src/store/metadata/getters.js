@@ -17,3 +17,8 @@ export function getStatistic(state) {
     return stat;
   };
 }
+
+export function getDoubleCardData(state) {
+  return (cardId) => state.doubleCards
+    .find((card) => (card.sideA.id === cardId || card.sideB.id === cardId));
+}

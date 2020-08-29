@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export function squadronRequest(id, lang) {
-  console.log(lang);
   if (lang === undefined) {
     lang = 'en';
   }

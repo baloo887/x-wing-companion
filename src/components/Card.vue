@@ -1,7 +1,7 @@
 <template>
   <q-card flat>
       <q-img
-      :src="cardInfo.card_image"
+      :src="cardImage"
       spinner-color="white"
       v-bind:class="type"
       v-bind:position="pos"
@@ -12,10 +12,19 @@
           id: statistic.statistic_id }"
       />
     </div>
+    <q-btn
+      v-if="isDouble"
+      unelevated round color="primary"
+      v-bind:icon="activeIcon"
+      class="absolute-top right flip-button"
+      @click="flip()"
+      size="20px"
+    />
   </q-card>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import indicator from './Indicator.vue';
 
 const statsIdToShow = [2, 4, 3, 7];
@@ -32,7 +41,33 @@ export default {
       default: 'pilot-card',
     },
   },
+  data() {
+    return {
+      cardImage: null,
+      activeSide: null,
+      otherSide: null,
+      isDouble: false,
+      activeIcon: 'flip_to_back',
+      otherIcon: 'flip_to_front',
+    };
+  },
+  mounted() {
+    const double = this.doubleCardData(this.cardInfo.id);
+    if (double) {
+      this.isDouble = true;
+      this.activeSide = double.sideA.id === this.cardInfo.id
+        ? double.sideA.image : double.sideB.image;
+      this.otherSide = double.sideA.id === this.cardInfo.id
+        ? double.sideB.image : double.sideA.image;
+      this.cardImage = this.activeSide;
+    } else {
+      this.cardImage = this.cardInfo.card_image;
+    }
+  },
   computed: {
+    ...mapGetters({
+      doubleCardData: 'metadata/getDoubleCardData',
+    }),
     pos: function p() {
       let val = '50% 50%';
       switch (this.type) {
@@ -52,6 +87,20 @@ export default {
         .filter((item) => statsIdToShow.includes(item.statistic_id));
     },
   },
+  methods: {
+    flip: function f() {
+      const icon = this.activeIcon;
+
+      if (this.activeSide === this.cardImage) {
+        this.cardImage = this.otherSide;
+      } else {
+        this.cardImage = this.activeSide;
+      }
+
+      this.activeIcon = this.otherIcon;
+      this.otherIcon = icon;
+    },
+  },
 };
 </script>
 
@@ -69,5 +118,9 @@ export default {
   .upgrade-card {
     width: 300px;
     height: 360px;
+  }
+
+  .flip-button {
+    margin: 10px 10px;
   }
 </style>

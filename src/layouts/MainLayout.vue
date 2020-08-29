@@ -4,7 +4,7 @@
       <q-header elevated>
         <q-toolbar>
           <q-btn flat @click="leftDrawerOpen = !leftDrawerOpen" round dense icon="menu" />
-          <q-toolbar-title>X-Wing companion</q-toolbar-title>
+          <q-toolbar-title>X-Wing List</q-toolbar-title>
         </q-toolbar>
       </q-header>
 

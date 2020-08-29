@@ -3,11 +3,11 @@
       <div v-if="squadron">
         <q-list bordered separator>
           <q-item>
-            <q-item-section>Name: {{ squadron.name }}</q-item-section>
+            <q-item-section class="text-h5">Name: {{ squadron.name }}</q-item-section>
           </q-item>
 
           <q-item>
-            <q-item-section>Points: {{ squadron.cost }}</q-item-section>
+            <q-item-section class="text-h6">Points: {{ squadron.cost }}</q-item-section>
           </q-item>
         </q-list>
         <Pilot v-for="(pilot,index) in squadron.deck" :key="pilot.pilot_card.id+'_'+index"

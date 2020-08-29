@@ -1,11 +1,11 @@
 <template>
     <q-scroll-area
       horizontal
-      style="height: 620px">
+      style="height: 650px">
       <q-list bordered>
         <q-item>
-          <q-item-section class="col-md-2 col-sm-2">{{ pilot.name }}: {{ cost }}pt
-            <q-input v-model="pilotNumber" label="Tag number"/>
+          <q-item-section class="col-md-5 col-sm-5 text-h6">{{ pilot.name }}: {{ cost }}pt
+            <q-input v-model="pilotNumber" label="Ship Id"/>
           </q-item-section>
         </q-item>
         <q-item>

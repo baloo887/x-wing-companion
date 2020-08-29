@@ -2,7 +2,7 @@
   "name": "x-wing-companion",
   "version": "0.0.1",
   "description": "Companion app to ease play",
-  "productName": "X-Wing companion",
+  "productName": "X-Wing list displayer",
   "author": "Luca Donadi <lucadonadi.tv@gmail.com>",
   "private": true,
   "scripts": {

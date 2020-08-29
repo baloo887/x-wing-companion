@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getLanguages = getLanguages;
 exports.getStatistic = getStatistic;
+exports.getDoubleCardData = getDoubleCardData;
 
 function getLanguages(state) {
   var lang = [];
@@ -29,5 +30,13 @@ function getStatistic(state) {
     }
 
     return stat;
+  };
+}
+
+function getDoubleCardData(state) {
+  return function (cardId) {
+    return state.doubleCards.find(function (card) {
+      return card.sideA.id === cardId || card.sideB.id === cardId;
+    });
   };
 }
